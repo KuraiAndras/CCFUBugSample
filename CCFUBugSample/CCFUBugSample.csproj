@@ -1,0 +1,22 @@
+<Project>
+
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>.obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>.bin\</BaseOutputPath>
+  </PropertyGroup>
+
+  <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="**/**/*.meta" />
+  </ItemGroup>
+
+  <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.targets" />
+
+</Project>
